@@ -1,0 +1,27 @@
+.whereform input[type="text"], input[type="password"], textarea, select
+{ 
+	font-size: 12px;
+	display: inline-block;
+	color: #4C4C4C;
+	margin-bottom: 0px;
+}
+
+.whereform .input-long
+{
+	width : 80%;
+}
+
+.whereform select
+{
+	margin-right: 5px;
+	margin-left: 0px
+}
+
+select[multiple]
+{
+	min-height: 100px;
+}        
+textarea
+{
+	min-height: 100px;
+}

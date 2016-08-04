@@ -1,0 +1,21 @@
+#MyEclipse Hibernate Properties
+#Fri Feb 28 14:05:50 CST 2014
+genBasicCompId=false
+sessionFactoryName=cn.edu.xjtu.se.vampire.hibernate.dao.HibernateSessionFactory
+profile=
+daoSFId=
+jndiPath=
+detectM2M=true
+reStrategyClass=
+detectO2O=true
+springDaoFile=
+useJavaTypes=false
+keyGenerator=native
+genVersionTag=false
+sessionFactoryId=
+basePersistenceClass=
+genAnnotations=false
+reSettingsFile=
+configFile=/Vampire/src/hibernate.cfg.xml
+createConfigFile=true
+baseDaoClass=BaseHibernateDAO

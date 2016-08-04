@@ -1,0 +1,27 @@
+@CHARSET "GB18030";
+
+.body {
+	margin-left: 10px;
+}
+
+#p_welcome {
+	float: left;
+	color: #00CC99;
+	font-size: 40px;
+}
+
+#p_cpassword a {
+	color: #008DC4;
+}
+
+#p_cpassword a:hover {
+	text-decoration: underline;
+}
+
+#p_mail {
+	color: #EE3300;
+}
+
+#p_phone {
+	color: #EE3300;
+}

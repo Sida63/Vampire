@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>Vampire</display-name>
+  <servlet>
+    <servlet-name>ServletBelongTang</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>cn.edu.xjtu.se.vampire.servlet.ServletBelongTang</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>ServletBelongTang</servlet-name>
+    <url-pattern>/silver/ServletBelongTang</url-pattern>
+        <url-pattern>/garlic/ServletBelongTang</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>AetfTestJSONServlet</servlet-name>
+    <servlet-class>cn.edu.xjtu.se.vampire.servlet.AetfTestJSONServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AuthenticServlet</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>cn.edu.xjtu.se.vampire.servlet.AuthenticServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>RegisterServlet</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>cn.edu.xjtu.se.vampire.servlet.RegisterServlet</servlet-class>
+  </servlet>
+  <servlet>
+
+    <servlet-name>SearchServlet</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>cn.edu.xjtu.se.vampire.servlet.SearchServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>GoodsDetailServlet</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>cn.edu.xjtu.se.vampire.servlet.GoodsDetailServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ProfileServlet</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>cn.edu.xjtu.se.vampire.servlet.ProfileServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DeliveryCenterServlet</servlet-name>
+    <display-name>DeliveryCenterServlet</display-name>
+    <description>Servlet for delivery info handle</description>
+    <servlet-class>cn.edu.xjtu.se.vampire.servlet.DeliveryCenterServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>NewGoodsServlet</servlet-name>
+    <servlet-class>cn.edu.xjtu.se.vampire.servlet.NewGoodsServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>HotGoodsServlet</servlet-name>
+    <servlet-class>cn.edu.xjtu.se.vampire.servlet.HotGoodsServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>AetfTestJSONServlet</servlet-name>
+    <url-pattern>/silver/AetfTestJSONServlet</url-pattern>
+        <url-pattern>/garlic/AetfTestJSONServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AuthenticServlet</servlet-name>
+    <url-pattern>/silver/AuthenticServlet</url-pattern>
+        <url-pattern></url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RegisterServlet</servlet-name>
+    <url-pattern>/silver/RegisterServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+
+    <servlet-name>SearchServlet</servlet-name>
+    <url-pattern>/servlet/SearchServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  
+    <servlet-name>GoodsDetailServlet</servlet-name>
+    <url-pattern>/silver/goods/*</url-pattern>
+        <url-pattern>/garlic/goods/*</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ProfileServlet</servlet-name>
+    <url-pattern>/user/profile</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeliveryCenterServlet</servlet-name>
+    <url-pattern>/silver/user/deliveries/*</url-pattern>
+
+
+
+        <url-pattern>/silver/area/*</url-pattern>
+        <url-pattern>/garlic/area/*</url-pattern>
+
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>NewGoodsServlet</servlet-name>
+    <url-pattern>/silver/goods/latest/json</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+    <servlet>
+        <servlet-name>OrderHistoryServlet</servlet-name>
+        <servlet-class>cn.edu.xjtu.se.vampire.servlet.OrderHistoryServlet</servlet-class>
+    </servlet>
+  <servlet>
+    <servlet-name>CommentsServlet</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>cn.edu.xjtu.se.vampire.servlet.CommentsServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>RelatedGoodsServlet</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>cn.edu.xjtu.se.vampire.servlet.RelatedGoodsServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CouponPropertiesManagementServlet</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>cn.edu.xjtu.se.vampire.servlet.CouponPropertiesManagementServlet</servlet-class>
+  </servlet>
+ <servlet>
+        <servlet-name>OrderManServlet</servlet-name>
+        <servlet-class>cn.edu.xjtu.se.vampire.servlet.OrderManServlet</servlet-class>
+    </servlet>
+
+
+
+    <servlet-mapping>
+        <servlet-name>OrderHistoryServlet</servlet-name>
+        <url-pattern>/silver/user/orderhistory</url-pattern>
+
+    </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CommentsServlet</servlet-name>
+    <url-pattern>/silver/goods/comments</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RelatedGoodsServlet</servlet-name>
+    <url-pattern>/silver/goods/related</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>HotGoodsServlet</servlet-name>
+    <url-pattern>/silver/goods/hot/json</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CouponPropertiesManagementServlet</servlet-name>
+    <url-pattern>/management/coupon_prop/*</url-pattern>
+  </servlet-mapping>
+
+    <listener id="VampireSessionListener">
+        <description>VampireSessionListener</description>
+        <display-name>VampireSessionListener</display-name>
+        <listener-class>cn.edu.xjtu.se.vampire.servlet.VampireSessionListener</listener-class>
+    </listener>
+    <filter>
+        <filter-name>AccessControl</filter-name>
+        <filter-class>cn.edu.xjtu.se.vampire.servlet.AccessControl</filter-class>
+        <init-param>
+            <param-name>loginPage</param-name>
+            <param-value>silver/login.jsp</param-value>
+        </init-param>
+    </filter>
+    <filter-mapping>
+        <filter-name>AccessControl</filter-name>
+        <url-pattern>/silver/*</url-pattern>
+    </filter-mapping>
+    <filter>
+        <filter-name>EncodingFilter</filter-name>
+        <filter-class>cn.edu.xjtu.se.vampire.servlet.EncodingFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>EncodingFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+    <servlet-mapping>
+        <servlet-name>OrderManServlet</servlet-name>
+        <url-pattern>/garlic/user/orderman/*</url-pattern>
+    </servlet-mapping>
+    
+
+</web-app>
